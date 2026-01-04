@@ -1,3 +1,5 @@
+import { Keyboard, BarChart3, Rocket, Armchair } from 'lucide-react'
+
 function App() {
   const services = [
     {
@@ -5,27 +7,28 @@ function App() {
       description: 'Window Manager practice and learning tool',
       url: 'https://wm-dojo.stackgobrr.com',
       status: 'live',
-      icon: '⌨️'
+      icon: Keyboard
     },
     {
       name: 'Actions Dashboard',
       description: 'GitHub Actions workflow monitoring dashboard',
       url: 'https://actions.dashboard.stackgobrr.com',
       status: 'live',
-      icon: '📊'
+      icon: BarChart3
     },
     {
       name: 'SPA Template',
       description: 'Single-page application template with React and Vite',
       url: 'https://spa-template.stackgobrr.com',
       status: 'live',
-      icon: '🚀'
+      icon: Rocket
     }
   ]
 
   return (
     <div className="container">
       <header className="header">
+        <Armchair className="header-icon" size={48} strokeWidth={1.5} />
         <h1>stackgobrr</h1>
         <p className="tagline">Services and Tools</p>
       </header>
@@ -33,19 +36,24 @@ function App() {
       <main className="main">
         {services.length > 0 ? (
           <div className="services-grid">
-            {services.map((service, index) => (
-              <a
-                key={index}
-                href={service.url}
-                className="service-card"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h2>{service.name}</h2>
-                <div className="service-icon">{service.icon}</div>
-                <p className={`status-${service.status}`}>{service.description}</p>
-              </a>
-            ))}
+            {services.map((service, index) => {
+              const Icon = service.icon
+              return (
+                <a
+                  key={index}
+                  href={service.url}
+                  className="service-card"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h2>{service.name}</h2>
+                  <div className="service-icon">
+                    <Icon size={64} strokeWidth={1.5} />
+                  </div>
+                  <p className={`status-${service.status}`}>{service.description}</p>
+                </a>
+              )
+            })}
           </div>
         ) : (
           <div className="empty-state">

@@ -29,6 +29,14 @@ body {
 .header {
   text-align: center;
   padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-icon {
+  color: #ebdbb2;
 }
 
 .header h1 {
