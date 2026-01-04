@@ -1,13 +1,11 @@
 function App() {
   const services = [
-    // Add your services here as they become available
-    // Example:
-    // {
-    //   name: 'Service Name',
-    //   description: 'Brief description of the service',
-    //   url: 'https://service.stackgobrr.com',
-    //   status: 'live' // or 'development'
-    // }
+    {
+      name: 'WM Dojo',
+      description: 'Window Manager practice and learning tool',
+      url: 'https://wm-dojo.stackgobrr.com',
+      status: 'live'
+    }
   ]
 
   return (
