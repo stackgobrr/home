@@ -4,19 +4,22 @@ function App() {
       name: 'WM Dojo',
       description: 'Window Manager practice and learning tool',
       url: 'https://wm-dojo.stackgobrr.com',
-      status: 'live'
+      status: 'live',
+      icon: '⌨️'
     },
     {
       name: 'Actions Dashboard',
       description: 'GitHub Actions workflow monitoring dashboard',
-      url: 'https://actions-dashboard.stackgobrr.com',
-      status: 'live'
+      url: 'https://actions.dashboard.stackgobrr.com',
+      status: 'live',
+      icon: '📊'
     },
     {
       name: 'SPA Template',
       description: 'Single-page application template with React and Vite',
       url: 'https://spa-template.stackgobrr.com',
-      status: 'live'
+      status: 'live',
+      icon: '🚀'
     }
   ]
 
@@ -39,10 +42,8 @@ function App() {
                 rel="noopener noreferrer"
               >
                 <h2>{service.name}</h2>
-                <p>{service.description}</p>
-                <span className={`status status-${service.status}`}>
-                  {service.status}
-                </span>
+                <div className="service-icon">{service.icon}</div>
+                <p className={`status-${service.status}`}>{service.description}</p>
               </a>
             ))}
           </div>
