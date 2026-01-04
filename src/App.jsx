@@ -5,6 +5,18 @@ function App() {
       description: 'Window Manager practice and learning tool',
       url: 'https://wm-dojo.stackgobrr.com',
       status: 'live'
+    },
+    {
+      name: 'Actions Dashboard',
+      description: 'GitHub Actions workflow monitoring dashboard',
+      url: 'https://actions-dashboard.stackgobrr.com',
+      status: 'live'
+    },
+    {
+      name: 'SPA Template',
+      description: 'Single-page application template with React and Vite',
+      url: 'https://spa-template.stackgobrr.com',
+      status: 'live'
     }
   ]
 
