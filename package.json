@@ -1,7 +1,7 @@
 {
-  "name": "spa-template",
+  "name": "home",
   "version": "1.0.0",
-  "description": "Template for single-page applications with React + Vite",
+  "description": "Service Catalogue and Home Page",
   "type": "module",
   "scripts": {
     "dev": "vite",
