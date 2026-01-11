@@ -38,13 +38,13 @@ function App() {
         <h1>Sam Holden</h1>
         <p className="subtitle">Building developer tools and infrastructure</p>
         <a 
-          href="https://github.com/samholden" 
+          href="https://github.com/stackgobrr" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="github-link"
         >
           <Github size={16} strokeWidth={2} />
-          <span>github.com/samholden</span>
+          <span>github.com/stackgobrr</span>
         </a>
       </header>
 
