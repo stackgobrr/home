@@ -35,8 +35,8 @@ function App() {
   return (
     <div className="container">
       <header className="header">
-        <h1>Sam Holden</h1>
-        <p className="subtitle">Building developer tools and infrastructure</p>
+        <h1>StackGoBrr</h1>
+        <p className="subtitle">Exploring ideas and technology.</p>
         <a 
           href="https://github.com/stackgobrr" 
           target="_blank" 
