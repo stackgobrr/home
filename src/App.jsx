@@ -1,4 +1,4 @@
-import { Keyboard, BarChart3, Rocket, Armchair } from 'lucide-react'
+import { Keyboard, BarChart3, Rocket, Armchair, Puzzle } from 'lucide-react'
 
 function App() {
   const services = [
@@ -8,6 +8,13 @@ function App() {
       url: 'https://wm-dojo.stackgobrr.com',
       status: 'live',
       icon: Keyboard
+    },
+    {
+      name: 'Emojiroglyphics',
+      description: 'A 3-player collaborative game where players decode emoji hieroglyphics',
+      url: 'https://emojiroglyphics.stackgobrr.com',
+      status: 'live',
+      icon: Puzzle
     },
     {
       name: 'Actions Dashboard',
