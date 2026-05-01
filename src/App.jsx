@@ -3,6 +3,13 @@ import { Keyboard, BarChart3, Rocket, Puzzle, Github, ArrowUpRight } from 'lucid
 function App() {
   const projects = [
     {
+      name: 'Duty Clock',
+      description: 'Time tracking productivity tool.',
+      url: 'https://duty-clock.stackgobrr.com',
+      icon: Puzzle,
+      tags: ['Tool', 'Productivity']
+    },
+    {
       name: 'Emojiroglyphics',
       description: '3-player collaborative puzzle game',
       url: 'https://emojiroglyphics.stackgobrr.com',
